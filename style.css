@@ -1,0 +1,51 @@
+html {
+    font-family: "Barlow Semi Condensed", sans-serif;
+}
+
+.main {
+
+    background-color: #ecf2f8;
+    display: grid;
+    min-height: 100vh;
+}
+
+.photo {
+    border-radius: 50%;
+    border: 2px double purple;
+    width: 40px;
+    height: 40px;
+}
+
+.photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+
+.person {
+    display: flex;
+    align-items: center;
+}
+
+.person1 {
+    background: hsl(263, 55%, 52%);
+    
+}
+
+.person2 {
+    background: hsl(217, 19%, 35%);
+}
+
+.person3 {
+    background: hsl(0, 0%, 100%);
+}
+
+.person4 {
+    background: hsl(219, 29%, 14%) ;
+}
+
+.person5 {
+    background: hsl(0, 0%, 100%);
+}
