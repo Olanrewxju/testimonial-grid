@@ -1,51 +1,137 @@
-html {
-    font-family: "Barlow Semi Condensed", sans-serif;
-}
-
-.main {
-
-    background-color: #ecf2f8;
-    display: grid;
-    min-height: 100vh;
-}
-
-.photo {
-    border-radius: 50%;
-    border: 2px double purple;
-    width: 40px;
-    height: 40px;
-}
-
-.photo img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 
+#testimonial-grid-container {
+    padding: 3% 5%;
+}
 
-.person {
+body {
+    background-color: #ECF2F8;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+}
+
+#testimonial-1 {
+    background-color: #7541c8;
+    color: #FFFFFF;
+    position: relative;
+    z-index: 0;
+}
+
+#testimonial-2 {
+    background-color: #48556A;
+    color: #FFFFFF;
+}
+
+#testimonial-3 {
+    background-color: #FFFFFF;
+    color: #48556A;;
+}
+
+#testimonial-4 {
+    background-color: #19212E;
+    color: #FFFFFF;
+
+}
+
+#testimonial-5 {
+    background-color: #FFFFFF;
+    color: #48556A;
+        ;
+}
+
+.grid-item {
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.2);
+    font-size: 13px;
+}
+
+#quotesign {
+    position: absolute;
+    right: 15%;
+    top: 0;
+    z-index: -1;
+}
+
+.grid-item p {
+    opacity: 75%;
+}
+
+.header {
     display: flex;
     align-items: center;
+    margin-bottom: 20px;
+    z-index: 3;
 }
 
-.person1 {
-    background: hsl(263, 55%, 52%);
+.header .name {
+    opacity: 100%;
+    font-size: 1rem;
+}
+
+.header .status {
+    opacity: 50%;
+}
+
+.header img {
+    border-radius: 50%;
+    margin-right: 10px;
+    border: 1px solid purple;
+}
+
+.grid-item h4 {
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+@media (min-width: 576px) {
+    #testimonial-grid-container {
+        max-width: 750px;
+        margin: 0 auto;
+        max-width: 1440px;
+    }
+
+    #testimonial-5 {
+        flex-basis: 20%;
+    }
+
+    #left-container {
+        flex-direction: column;
+        flex-basis: 80%;
+    }
+
+    #left-container .grid-item {
+        margin-right: 15px;
+    }
+
+    #top,
+    #bottom,
+    #left-container,
+    #testimonial-grid-container {
+        display: flex;
     
-}
+    }
+    #top {
+        flex-basis: 50%;
+    }
 
-.person2 {
-    background: hsl(217, 19%, 35%);
-}
-
-.person3 {
-    background: hsl(0, 0%, 100%);
-}
-
-.person4 {
-    background: hsl(219, 29%, 14%) ;
-}
-
-.person5 {
-    background: hsl(0, 0%, 100%);
+    #bottom {
+        flex-basis: 50%;
+    }
+    
+    #testimonial-1, 
+    #testimonial-4 {
+        flex-basis: 65%;
+    }
+    
+    #testimonial-2,
+    #testimonial-3 {
+        flex-basis: 35%;
+    }
 }
